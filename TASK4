@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navigation Bar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Add some content here to demonstrate scrolling -->
+  <main>
+    <h1>Welcome to Our Website!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis vitae ipsum ac lacinia.</p>
+    <!-- Add more content as needed -->
+  </main>
+</body>
+</html> 
+
+
+CSS :: 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+main {
+  padding-top: 80px; /* Add padding to avoid content being overlapped by the fixed navbar */
+}
+
+/* Add some additional styles for demonstration purposes */
+main h1 {
+  text-align: center;
+}
+
+main p {
+  text-align: center;
+}
+
